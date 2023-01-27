@@ -257,7 +257,7 @@ main .down .info .course .cInfo .none {
         margin: 0 10px;
     }
     main {
-        margin: 20px;
+        margin: 0;
     }
     main .up,.down {
         width: 100vw;
