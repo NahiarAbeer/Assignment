@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background: #E5E5E5;
+    font-family: 'Poppins', sans-serif;
+    height: 200vh;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --width: 60%;
+    --time:all 0.3s ease-in-out;
+}
+
+header {
+    height: 100px;
+    background: #562EFF;
+    position: fixed;
+    width: 100%;
+    place-content: center;
+    display: flex;
+    z-index: 999;
+}
+
+header nav {
+    width: var(--width);
+    display: flex;
+    align-items: center;
+
+}
+
+header nav ul {
+
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+header nav ul span {
+    display: flex;
+    align-items: center;
+}
+
+header nav ul span li {
+    list-style: none;
+    align-self: center;
+
+}
+
+header nav ul span .brandName {
+
+    font-size: 24px;
+    line-height: 30px;
+    margin-left: 20px;
+    color: #fff;
+}
+
+header nav ul span li img {
+    width: 51px;
+    transition: all 0.3s ease-in-out;
+
+}
+
+header nav ul span li img:first-child {
+    width: 40px;
+}
+
+header nav ul .opt li a {
+    text-decoration: none;
+    color: white;
+    margin: 0 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+header nav ul .opt li a:hover {
+    color: black;
+    transition: all 0.3s ease-in-out;
+}
+
+header nav ul .opt li img:hover {
+    scale: 110%;
+    transition: var(--time);
+    transform: translateY(-5px);
+}
+main {
+    width: var(--width);
+    position: relative;
+    top: 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+}
+main .up ,main .down{
+    background: #fff;
+    height: 725px;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0px 0px 46px -7px rgba(0,0,0,0.65);
+}
+main .up .playerInfo span{
+    font-size: 24px;
+    font-weight: 600;
+    color: #562EFF;
+}
+main .up .playerInfo .feat  {
+    display: grid;
+    height: 250px;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+}
+main .up .playerInfo .feat .names{
+    display: flex;
+    flex-direction: row;
+    place-items: center;
+    
+}
+main .up .playerInfo .feat .names *{
+    margin: 0 20px;
+}
+main .up .playerInfo .feat .names img{
+    position: relative;
+    width: 62px;
+    height: 62px;
+    border-radius: 50%;
+    transition: var(--time);
+
+}
+main .up .playerInfo .feat .names img:hover {
+    scale: 110%;
+    transform: translateY(-10px);
+    transition: var(--time);
+    
+}
+main .up .playerInfo .feat .names p {
+    font-weight: 600;
+}
+main .up .blog {
+    top: 30px;
+    position: relative;
+}
+main .up .blog p{
+    color: #562EFF;
+    font-size: 24px;
+    font-weight: 600;
+}
+main .up .blog .library {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+}
+main .up .blog .library .topics{
+    display: flex;
+    flex-direction: row;
+    
+}
+main .up .blog .library .topics img{
+    width: 180px;
+}
+main .up .blog .library .topics *{
+    margin: 10px 5px;
+}
+main .up .blog .library .topics .txt{
+    place-items: center;
+}
+main .up .blog .library .topics .txt .att {
+    color: #9F9F9F;
+}
+main .up .blog .library .topics .txt .author {
+    color: #562EFF;
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 600;
+}
+main .down{
+    top :50px;
+    position: relative;
+    height: 380px;
+    place-items: center;
+}
+main .down span:first-child {
+    color: #562EFF;
+    font-size: 24px;
+    font-weight: 600;
+}
+main .down .info{
+    display: grid;
+    grid-template-columns: repeat(3 ,1fr);
+}
+main .down .course {
+    top: 40px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+    margin: 0 10px;
+    padding: 7px;
+    border-radius: 14px;
+    box-shadow: 0px 0px 19px 1px rgba(0,0,0,0.47);
+    transition: var(--time);
+    cursor: pointer;
+}
+main .down .course:hover {
+    scale:105%;
+    transform: translateY(-15px);
+    transition: var(--time);
+}
+main .down .course img {
+    width: 80%;
+    place-self: center;
+}
+
+main .down .course span {
+    color: #ED6B4F;
+}
+main .down .course .cInfo p{
+    
+    color: #9F9F9F;
+}
+main .down .course span:last-child {
+    background-color: #FEE5DF;
+    padding: 1px;
+    border-radius: 15px;
+}
+main .down .info .course .cInfo .fa-star{
+    color: gold;
+}
+main .down .info .course .cInfo .none {
+    color: #A2A2A2;
+}
