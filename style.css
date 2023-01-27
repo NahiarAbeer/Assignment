@@ -63,13 +63,16 @@ header nav ul span .brandName {
 }
 
 header nav ul span li img {
-    width: 51px;
+    width: 40px;
     transition: all 0.3s ease-in-out;
-
+    
 }
 
-header nav ul span li img:first-child {
-    width: 40px;
+header nav ul .opt li img {
+    width: 51px;
+    border-radius: 50%;
+    border: 1px solid #fff ;
+
 }
 
 header nav ul .opt li a {
@@ -197,6 +200,7 @@ main .down .info{
 }
 main .down .course {
     top: 40px;
+    height: 250px;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -235,4 +239,57 @@ main .down .info .course .cInfo .fa-star{
 }
 main .down .info .course .cInfo .none {
     color: #A2A2A2;
+}
+
+
+@media only screen and (max-width: 1468px) {
+    header {
+        top: 0;
+        position: fixed;
+        margin: 0;
+        justify-content: start;
+    }
+    header nav {
+        
+        width: 80%;
+    }
+    header nav ul .opt li a {
+        margin: 0 10px;
+    }
+    main {
+        margin: 20px;
+    }
+    main .up,.down {
+        width: 100vw;
+    }
+    main .up {
+        min-height: 750px;
+        height: auto;
+    }
+    main .up .playerInfo .feat {
+        height: 400px;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(3,1fr);
+    }
+    main .up .playerInfo .feat .names {
+        display: flex;
+        flex-direction: column;
+        place-items: center;
+    }
+    main .up .blog .library {
+        display: flex ;
+        flex-direction: column;
+    }
+    main .down {
+        min-height: 400px;
+        height: auto;
+    }
+    main .down .info {
+        display: flex;
+        flex-direction: column;
+    }
+    main .down .info .course {
+        margin: 20px 0;
+
+    }
 }
